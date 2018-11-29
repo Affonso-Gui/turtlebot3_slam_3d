@@ -9,6 +9,9 @@
     <arg name="delay" value="30.0"/>
   </include>
 
+  <!-- SUBSCRIBER -->
+  <node pkg="turtlebot3_slam_3d" type="subscriber.py" name="class_subscriber"/>
+
   <!-- RTABMAP -->
   <include file="$(find turtlebot3_slam_3d)/launch/rtabmap.launch">
     <arg name="rate" value="$(arg rate)"/>
